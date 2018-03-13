@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 public class DcController {
 
     @Autowired
-    RestTemplate restTemplate;
+    DcClient dcClient;
 
 //    @GetMapping("/consumer")
 //    public String dc() {
@@ -22,6 +22,6 @@ public class DcController {
 //    }
     @GetMapping("/consumer")
     public String dc() {
-        return restTemplate.getForObject("http://eureka-client/dc", String.class);
+        return dcClient.consumer();
     }
 }
