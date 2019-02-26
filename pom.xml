@@ -12,6 +12,13 @@
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>eureka-consumer</module>
+        <module>config-server-git</module>
+        <module>config-client</module>
+        <module>api-gateway</module>
+        <module>stream-hello</module>
+        <module>trace1</module>
+        <module>trace2</module>
+        <module>zipkin-server</module>
     </modules>
 
     <parent>
@@ -20,5 +27,13 @@
         <version>1.5.4.RELEASE</version>
         <relativePath/>
     </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-parent</artifactId>
+            <version>Dalston.SR1</version>
+        </dependency>
+    </dependencies>
 
 </project>
